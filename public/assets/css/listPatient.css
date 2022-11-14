@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Titre';
+    src: url(../../fonts/Ungai\ DEMO.otf);
+}
+
+@font-face {
+    font-family: 'Paragraph';
+    src: url(../../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerListPatient {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/public/assets/img/background/BackgroundVagueFummé.jpg);
+}
+
+.listPatient {
+    width: 90%;
+    height: 90%;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );    border-radius: 10px;
+    box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listPatient p {
+    width: 100%;
+    font-family: 'Titre';
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-decoration: underline;
+    text-decoration-color: #04BBFF;
+}
+
+table {
+    width: 80%;
+    height: auto;
+    font-family: 'Paragraph';
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+}
+
+th, td {
+    padding-bottom: 1%;
+}
+
+td > a {
+    text-decoration: none;
+    color: black;
+}
+
+.search {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.liveSearch {
+    width: auto;
+    height: 100%;
+    padding: 1%;
+    font-family: 'Paragraph';
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.liveSearch:hover {
+    border: 2px #04BBFF solid;
+}
+
+.search button {
+    width: auto;
+    height: 50px;
+    background: none;
+    border: none;
+}
+
+.search button img {
+    width: 50px;
+    cursor: pointer;
+}

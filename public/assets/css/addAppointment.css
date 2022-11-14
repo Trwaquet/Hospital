@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Titre';
+    src: url(../../fonts/Ungai\ DEMO.otf);
+}
+
+@font-face {
+    font-family: 'Paragraph';
+    src: url(../../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerAppointment {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/public/assets/img/background/BackgroundVagueFummé.jpg);
+}
+
+.appointmentForm {
+    width: 90%;
+    height: 90%;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );    
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.8);
+}
+
+.appointmentForm p {
+    width: 100%;
+    font-family: 'Titre';
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #04BBFF;
+}
+
+.appointmentForm label {
+    width: 25%;
+    font-family: 'Paragraph';
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.appointmentForm span {
+    font-family: 'Paragraph';
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.appointmentForm input {
+    width: 97%;
+    height: 30px;
+    padding: 1%;
+    font-family: 'Paragraph';
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.appointmentForm input:hover {
+    border: 2px #04BBFF solid;
+}
+
+.appointmentForm select {
+    width: 97%;
+    height: 40px;
+    padding: 1%;
+    font-family: 'Paragraph';
+    font-size: 15px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.appointmentForm select:hover {
+    border: 2px #04BBFF solid;
+}
+
+.appointmentForm button {
+    width: 20%;
+    font-family: 'Paragraph';
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.appointmentForm button:hover {
+    border: 2px #04BBFF solid;
+}
+
+.btnSupp {
+    color: red;
+}
